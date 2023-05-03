@@ -8,13 +8,13 @@ interface MandatoryInterface{
     name: string, age: number, salary: number 
 }
 
-// Constrains using type Alias
+// Constraints using type Alias
 const addMeInMyCrushMind2 = <T extends MandatoryTypes>(myInfo: T) => {
     const newData = { ...myInfo, myCrush2 };
     return newData;
 }
 
-// Constrains using Interface
+// Constraints using Interface
 const addMeInMyCrushMind3 = <T extends MandatoryInterface>(myInfo: T) => {
     const newData = { ...myInfo, myCrush2 };
     return newData;
