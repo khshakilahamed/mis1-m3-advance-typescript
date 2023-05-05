@@ -13,7 +13,7 @@ type newTypeUsingKeyOf = keyof PersonType;
 // const b: newTypeUsingKeyOf = 'name';
 
 
-function getProperty(obj: object, key: string) {
+function getProperty<X, Y extends keyof X>(obj: X, key: Y) {
     obj[key];
 }
 
